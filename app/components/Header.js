@@ -28,7 +28,7 @@ export const Header = () => {
       {/* Logo */}
       <div className="flex items-center">
         <Image
-          src="/CVH-MANUAL_page-0003.jpg" // Update the path to your image file
+          src="/img/logo.jpg" // Update the path to your image file
           alt="CareValue Health Logo"
           width={180}
           height={70}
