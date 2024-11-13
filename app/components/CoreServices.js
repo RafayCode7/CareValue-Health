@@ -18,7 +18,7 @@ export const CoreServices = () => {
             Get instant health guidance with our AI-powered doctor. Receive personalized answers to common health questions, symptom checks, and advice—all accessible for free or with advanced features.
           </p>
           <Link
-            href="/ai-doctor"
+            href="/user/AiDoctor"
             className="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition duration-200"
           >
             Try AI Doctor
@@ -33,7 +33,7 @@ export const CoreServices = () => {
             Connect with licensed specialists through secure video or audio consultations. Our telemedicine service provides real-time access to medical professionals for expert advice from anywhere in the world.
           </p>
           <Link
-            href="/consult-specialist"
+            href="/user/consultSpecialist"
             className="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition duration-200"
           >
             Book a Specialist
@@ -63,7 +63,7 @@ export const CoreServices = () => {
             Access your health records, consultation history, and personalized insights all in one secure portal. Manage your health information conveniently and stay informed about your care journey.
           </p>
           <Link
-            href="/patient-portal"
+            href="/user/patientPortal"
             className="inline-block px-6 py-2 text-white bg-blue-600 rounded-lg hover:bg-blue-500 transition duration-200"
           >
             Log in to Patient Portal

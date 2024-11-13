@@ -7,31 +7,28 @@ const InfoCardSection = () => {
       id: 1,
       text: (
         <>
-          Experience Confidence with{" "}
-          <strong>Top-Tier Cardiologists & Primary Doctors</strong>
+          Experience Confidence with <strong>Top-Tier Cardiologists & Primary Doctors</strong>
         </>
       ),
-      bgColor: "bg-blue-200",
+      bgColor: "bg-[#b3e5fc]", // Light blue background
     },
     {
       id: 2,
       text: (
         <>
-          Bridge the Difference in Care With{" "}
-          <strong>Personalized Treatment</strong>
+          Bridge the Difference in Care With <strong>Personalized Treatment</strong>
         </>
       ),
-      bgColor: "bg-indigo-200",
+      bgColor: "bg-[#9fa8da]", // Lavender background
     },
     {
       id: 3,
       text: (
         <>
-          Access <strong>State-Of-The-Art HIPAA Compliant Technology</strong> for
-          Medical Reporting Ease
+          Access <strong>State-Of-The-Art HIPAA Compliant Technology</strong> for Medical Reporting Ease
         </>
       ),
-      bgColor: "bg-purple-200",
+      bgColor: "bg-[#b39ddb]", // Light purple background
     },
   ];
 
@@ -40,13 +37,13 @@ const InfoCardSection = () => {
       {cards.map((card) => (
         <div
           key={card.id}
-          className={`${card.bgColor} rounded-xl p-6 w-full md:w-[320px] lg:w-[340px] h-[180px] shadow-lg flex items-start transition-transform transform hover:scale-105 hover:shadow-2xl`}
+          className={`${card.bgColor} rounded-2xl p-6 w-[300px] h-[180px] shadow-lg flex flex-col items-start relative transition-transform transform hover:scale-105 hover:shadow-2xl`}
         >
-          {/* Icon */}
-          <FaAngleRight className="text-xl text-gray-700 mr-4 mt-1" />
+          {/* Icon positioned in the top-left corner */}
+          <FaAngleRight className="text-lg text-[#1a237e] absolute top-4 left-4" />
 
           {/* Text Content */}
-          <p className="text-[#12104A] text-base leading-relaxed font-semibold">
+          <p className="text-[#1a237e] text-base leading-relaxed font-mono font-medium mt-6">
             {card.text}
           </p>
         </div>
