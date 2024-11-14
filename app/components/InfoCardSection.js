@@ -37,13 +37,13 @@ const InfoCardSection = () => {
       {cards.map((card) => (
         <div
           key={card.id}
-          className={`${card.bgColor} rounded-2xl p-6 w-[300px] h-[180px] shadow-lg flex flex-col items-start relative transition-transform transform hover:scale-105 hover:shadow-2xl`}
+          className={`${card.bgColor} rounded-2xl p-6 w-[280px] h-[150px] shadow-lg flex flex-col justify-center items-start relative transition-transform transform hover:scale-105 hover:shadow-2xl`}
         >
           {/* Icon positioned in the top-left corner */}
-          <FaAngleRight className="text-lg text-[#1a237e] absolute top-4 left-4" />
+          <FaAngleRight className="text-lg text-[#3A3A5A] absolute top-4 left-4" />
 
           {/* Text Content */}
-          <p className="text-[#1a237e] text-base leading-relaxed font-mono font-medium mt-6">
+          <p className="text-[#3A3A5A] text-base leading-relaxed font-mono font-medium">
             {card.text}
           </p>
         </div>

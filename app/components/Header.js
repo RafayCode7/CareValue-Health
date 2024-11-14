@@ -10,7 +10,7 @@ export const Header = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "AI Doctor", link: "/user/AiDoctor" },
+    { name: "Instant Health Advice", link: "/user/AiDoctor" },
     { name: "Consult a Specialist", link: "/user/consultSpecialist" },
     { name: "Patient Portal", link: "/user/patientPortal" },
     { name: "Testimonials", link: "/user/testimonials" },
@@ -32,8 +32,8 @@ export const Header = () => {
           <Image
             src="/img/logo.jpg" // Update the path to your image file
             alt="CareValue Health Logo"
-            width={120} // Smaller size for mobile
-            height={50}
+            width={140} // Smaller size for mobile
+            height={60}
             quality={100}
             priority
             className="md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[70px]" // Adjust sizes for larger screens
