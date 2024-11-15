@@ -7,7 +7,8 @@ const InfoCardSection = () => {
       id: 1,
       text: (
         <>
-          Experience Confidence with <strong>Top-Tier Cardiologists & Primary Doctors</strong>
+          Experience Confidence with{" "}
+          <strong>Top-Tier Cardiologists & Primary Doctors</strong>
         </>
       ),
       bgColor: "bg-[#b3e5fc]", // Light blue background
@@ -16,7 +17,8 @@ const InfoCardSection = () => {
       id: 2,
       text: (
         <>
-          Bridge the Difference in Care With <strong>Personalized Treatment</strong>
+          Bridge the Difference in Care With{" "}
+          <strong>Personalized Treatment</strong>
         </>
       ),
       bgColor: "bg-[#9fa8da]", // Lavender background
@@ -25,7 +27,8 @@ const InfoCardSection = () => {
       id: 3,
       text: (
         <>
-          Access <strong>State-Of-The-Art HIPAA Compliant Technology</strong> for Medical Reporting Ease
+          Access <strong>State-Of-The-Art HIPAA Compliant Technology</strong>{" "}
+          for Medical Reporting Ease
         </>
       ),
       bgColor: "bg-[#b39ddb]", // Light purple background
@@ -37,7 +40,7 @@ const InfoCardSection = () => {
       {cards.map((card) => (
         <div
           key={card.id}
-          className={`${card.bgColor} rounded-2xl p-6 w-[280px] h-[150px] shadow-lg flex flex-col justify-center items-start relative transition-transform transform hover:scale-105 hover:shadow-2xl`}
+          className={`${card.bgColor} rounded-[1.25rem] p-6 w-[350px] h-[170px] shadow-lg flex flex-col justify-center items-start relative transition-transform transform hover:scale-105 hover:shadow-2xl`}
         >
           {/* Icon positioned in the top-left corner */}
           <FaAngleRight className="text-lg text-[#3A3A5A] absolute top-4 left-4" />

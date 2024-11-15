@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Data for each slide with image and overlay cards
 const slides = [
   {
-    image: "/img/slider1.jpg", // Adjust these paths to match your images
+    image: "/img/portrait-african-american.jpg", // Adjust these paths to match your images
     appointments: [
       {
         title: "AI Summarize Note",
@@ -31,7 +31,7 @@ const slides = [
     ],
   },
   {
-    image: "/img/slider2.jpg",
+    image: "/img/young-female.jpg",
     appointments: [
       {
         title: "Team Meeting",
@@ -70,25 +70,27 @@ const ImageSlider = () => {
             <Image
               src={slide.image}
               alt={`Slide ${index + 1}`}
-              width={600} // Adjust width
-              height={400} // Adjust height
-              className="object-cover w-full h-full rounded-lg"
+              width={500} // Adjusted width for desktop
+              height={300} // Adjusted height for desktop
+              className="object-cover w-full h-full"
             />
 
             {/* Overlay Cards */}
-            <div className="absolute top-10 right-10 space-y-4">
+            <div className="absolute top-5 right-5 space-y-4 md:top-10 md:right-10">
               {slide.appointments.map((appointment, idx) => (
                 <div
                   key={idx}
-                  className="bg-white shadow-lg rounded-lg p-4 flex items-center space-x-4"
+                  className="bg-white shadow-md p-3 flex items-center space-x-3 md:p-4"
                 >
-                  <div className="text-gray-900 font-semibold">
-                    <h3>{appointment.title}</h3>
-                    <p className="text-gray-600 text-sm">{appointment.time}</p>
+                  <div className="text-gray-900 font-medium">
+                    <h3 className="text-sm md:text-base">{appointment.title}</h3>
+                    <p className="text-gray-600 text-xs md:text-sm">
+                      {appointment.time}
+                    </p>
                   </div>
                   <button
                     style={{ backgroundColor: appointment.color }}
-                    className="text-white font-semibold px-3 py-1 rounded"
+                    className="text-white font-medium text-xs md:text-sm px-2 py-1"
                   >
                     {appointment.tag}
                   </button>

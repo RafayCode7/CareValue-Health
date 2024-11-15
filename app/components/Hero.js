@@ -48,26 +48,8 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Responsive Image Container with Increased Width on Desktop */}
-      <div className="flex-1 flex justify-center md:justify-end w-full md:max-w-md lg:max-w-lg xl:max-w-2xl">
-        <div className="relative w-full h-[220px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] overflow-hidden rounded-lg shadow-xl transition-transform duration-300 transform hover:scale-105">
-          {/* Image with Border and Rounded Corners */}
-          <Image
-            src="/img/portrait-african-american.jpg" // Update to your image path
-            alt="CareValue Health"
-            layout="fill"
-            objectFit="cover"
-            className="rounded-lg border border-gray-200"
-          />
-
-          {/* Overlay with Title or Call-to-Action */}
-          <div className="absolute inset-0 bg-black bg-opacity-40 rounded-lg flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-            <span className="text-white text-lg font-semibold px-4 py-2 bg-[#1a237e] bg-opacity-80 rounded-full shadow-lg">
-              Learn More About Our Services
-            </span>
-          </div>
-        </div>
-      </div>
+      
+     
     </section>
   );
 };
