@@ -1,6 +1,5 @@
 import "./globals.css";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
+
 
 export default function RootLayout({ children }) {
   const navItems = [
@@ -13,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header navItems={navItems} />
+        
         <main>{children}</main>
-        <Footer /> {/* Add Footer here */}
+       
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ export const Header = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Instant Health Advice", link: "/user/AiDoctor" },
+    { name: "Instant Health Advice", link: "/user/AiDoctor" },
     { name: "Consult a Specialist", link: "/user/consultSpecialist" },
     { name: "Patient Portal", link: "/user/patientPortal" },
     { name: "Testimonials", link: "/user/testimonials" },
@@ -38,7 +38,6 @@ export const Header = () => {
             priority
             className="md:w-[140px] md:h-[60px] lg:w-[160px] lg:h-[70px]" // Adjust sizes for larger screens
           />
-         
         </div>
       </Link>
 
@@ -76,7 +75,12 @@ export const Header = () => {
       {/* Action Icons and Mobile Hamburger Icon */}
       <div className="flex items-center space-x-3 md:space-x-4 lg:space-x-5 text-white">
         <FaSearch className="text-base md:text-lg lg:text-xl hover:text-gray-300 cursor-pointer" />
-        <FaUser className="text-base md:text-lg lg:text-xl hover:text-gray-300 cursor-pointer" />
+        
+        {/* Link to Login Page */}
+        <Link href="/user/login" passHref>
+          <FaUser className="text-base md:text-lg lg:text-xl hover:text-gray-300 cursor-pointer" />
+        </Link>
+        
         <FaShoppingBag className="text-base md:text-lg lg:text-xl hover:text-gray-300 cursor-pointer" />
         <div
           className="text-base md:text-lg lg:text-xl hover:text-gray-300 cursor-pointer md:hidden"

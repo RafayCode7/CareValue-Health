@@ -14,32 +14,32 @@ const Contact = () => {
       <div className="flex flex-col lg:flex-row gap-12 w-full max-w-5xl">
         
         {/* Contact Form */}
-        <div className="bg-gray-50 w-full max-w-lg p-8 rounded-lg shadow-lg lg:mb-0">
+        <div className="bg-blue-100 w-full max-w-lg p-8 rounded-lg shadow-lg lg:mb-0">
           <div className="flex flex-wrap gap-4 mb-4">
             <input
               type="text"
               placeholder="First Name"
-              className="flex-grow bg-gray-100 text-[#0d1945] p-3 rounded-full w-full lg:w-1/2 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
+              className="flex-grow bg-white text-[#0d1945] p-3 rounded-full w-full lg:w-1/2 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
             />
             <input
               type="text"
               placeholder="Last Name"
-              className="flex-grow bg-gray-100 text-[#0d1945] p-3 rounded-full w-full lg:w-1/2 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
+              className="flex-grow bg-white 100 text-[#0d1945] p-3 rounded-full w-full lg:w-1/2 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
             />
           </div>
           <input
             type="email"
             placeholder="Email Address"
-            className="bg-gray-100 text-[#0d1945] p-3 rounded-full w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
+            className="bg-white 100 text-[#0d1945] p-3 rounded-full w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
           />
           <input
             type="text"
             placeholder="Company Name"
-            className="bg-gray-100 text-[#0d1945] p-3 rounded-full w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
+            className="bg-white 100 text-[#0d1945] p-3 rounded-full w-full mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945]"
           />
           <textarea
             placeholder="Your Message"
-            className="bg-gray-100 text-[#0d1945] p-3 rounded-lg w-full h-32 mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945] resize-none"
+            className="bg-white 100 text-[#0d1945] p-3 rounded-lg w-full h-32 mb-4 focus:outline-none focus:ring-2 focus:ring-[#0d1945] resize-none"
           ></textarea>
           <button className="bg-[#0d1945] text-white py-3 px-8 rounded-full hover:bg-[#141a3e] transition">
             Send Message
