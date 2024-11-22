@@ -50,13 +50,13 @@ export const Hero = () => {
         <div className="mt-8 flex space-x-4 justify-center md:justify-start">
           <Link
             href="/get-started"
-            className="px-8 py-3 text-[#FFDEFF] bg-[#A8C8FF] rounded-full shadow-lg  hover:bg-[#FFDEFF] hover:text-[#A8C8FF] transition duration-300 transform hover:scale-105"
+            className="px-8 py-3 text-[#FFDEFF] bg-[#12104A] rounded-full shadow-lg  hover:bg-[#FFDEFF] hover:text-[#12104A] transition duration-300 transform hover:scale-105"
           >
             <i className="fas fa-user mr-2"></i> Get Started
           </Link>
           <Link
             href="/book-now"
-            className="px-8 py-3 text-[#FFDEFF] border border-[#FFDEFF] rounded-full shadow-lg hover:bg-[#FFDEFF] hover:text-[#A8C8FF] transition duration-300 transform hover:scale-105"
+            className="px-8 py-3 text-white border border-whi rounded-full shadow-lg hover:bg-[#FFDEFF] hover:text-[#12104A] transition duration-300 transform hover:scale-105"
           >
             <i className="fas fa-calendar mr-2"></i> Book Now
           </Link>
