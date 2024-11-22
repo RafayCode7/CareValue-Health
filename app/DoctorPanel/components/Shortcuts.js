@@ -8,7 +8,7 @@ export const Shortcuts = () => {
       {/* E-Prescriptions Shortcut */}
       <Link
         href="/e-prescriptions"
-        className="flex items-center bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+        className="flex items-center bg-[#12104A] text-white px-4 py-2 rounded hover:bg-blue-600 transition"
       >
         <PencilAltIcon className="h-6 w-6 mr-2" />
         E-Prescriptions
@@ -16,7 +16,7 @@ export const Shortcuts = () => {
       {/* New Appointment Shortcut */}
       <Link
         href="/appointments/new"
-        className="flex items-center bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
+        className="flex items-center bg-[#12104A] text-white px-4 py-2 rounded hover:bg-blue-600 transition"
       >
         <PlusCircleIcon className="h-6 w-6 mr-2" />
         New Appointment

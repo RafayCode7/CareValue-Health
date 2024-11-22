@@ -23,7 +23,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-64 h-screen bg-blue-700 text-white flex flex-col">
+    <aside className="w-64 h-screen bg-[#12104A] text-white flex flex-col">
       <nav className="mt-10 flex-1">
         {menuItems.map((item) => (
           <Link key={item.name} href={item.href} className="flex items-center px-4 py-2 hover:bg-blue-800 transition">

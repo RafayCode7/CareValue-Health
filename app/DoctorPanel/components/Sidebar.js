@@ -24,7 +24,7 @@ export const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-64 h-screen bg-blue-700 text-white flex flex-col">
+    <aside className="w-64 h-screen bg-[#12104A] text-white flex flex-col">
       <nav className="mt-10 flex-1">
         {menuItems.map((item) => (
           <Link

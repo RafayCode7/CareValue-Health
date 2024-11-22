@@ -14,7 +14,7 @@ export const CoreBenefitsSection = () => {
         {/* Benefit Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Card 1 */}
-          <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="flex flex-col items-center bg-[#b3e5fc] shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="text-blue-600 text-4xl mb-4">
               <FontAwesomeIcon icon={faStethoscope} />
             </div>
@@ -27,7 +27,7 @@ export const CoreBenefitsSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="flex flex-col items-center bg-[#9fa8da] shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="text-green-600 text-4xl mb-4">
               <FontAwesomeIcon icon={faUser} />
             </div>
@@ -40,7 +40,7 @@ export const CoreBenefitsSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col items-center bg-white shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+          <div className="flex flex-col items-center bg-[#b39ddb] shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="text-purple-600 text-4xl mb-4">
               <FontAwesomeIcon icon={faShieldAlt} />
             </div>

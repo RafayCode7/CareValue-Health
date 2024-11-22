@@ -2,7 +2,7 @@
 
 export const Sidebar = () => {
     return (
-      <aside className="w-64 h-screen bg-gray-800 text-white">
+      <aside className="w-64 h-screen bg-[#12104A] text-white">
         <nav className="mt-10 space-y-2">
           {/* Dashboard */}
           <a
