@@ -21,17 +21,17 @@ export const Hero = () => {
           autoPlay
           loop
           muted
-          className="w-full h-full object-cover"
+          className="w-full  h-full vh-[10px] object-cover"
         />
       </div>
 
       {/* Left Side - Text Content */}
       <div className="relative z-10 flex-1 text-center md:text-left mb-10 md:mb-0">
-        <h1 className="text-5xl md:text-6xl font-bold text-[#FFDEFF] leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold text-[#E5E5E5] leading-tight">
           {words.map((word, index) => (
             <motion.span
               key={index}
-              className={index === 1 ? "text-[#A8C8FF]" : ""}
+              className={index === 1 ? "text-[#12104A]" : ""}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.3, duration: 0.5 }}
@@ -42,7 +42,7 @@ export const Hero = () => {
         </h1>
 
         {/* Subtitle */}
-        <p className="mt-4 text-lg md:text-xl text-[#A8C8FF] max-w-md leading-relaxed">
+        <p className="mt-4 text-lg md:text-xl text-[#E5E5E5] max-w-md leading-relaxed">
         Get expert health advice, consult specialists, and access second opinions quickly, privately, anytime
         </p>
 
@@ -56,9 +56,9 @@ export const Hero = () => {
           </Link>
           <Link
             href="/book-now"
-            className="px-8 py-3 text-white border border-whi rounded-full shadow-lg hover:bg-[#FFDEFF] hover:text-[#12104A] transition duration-300 transform hover:scale-105"
+            className="px-8 py-3  text-white border border-whi rounded-full shadow-lg hover:bg-[#FFDEFF] hover:text-[#12104A] transition duration-300 transform hover:scale-105"
           >
-            <i className="fas fa-calendar mr-2"></i> Book Now
+            <i className="fas fa-calendar  bg-[#E5E5E5] mr-2"></i> Book Now
           </Link>
         </div>
       </div>
