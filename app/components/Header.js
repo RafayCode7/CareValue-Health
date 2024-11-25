@@ -10,7 +10,8 @@ export const Header = () => {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Instant Health Advice", link: "/user/AiDoctor" },
+    { name: "AI Doctor", link: "/user/AiDoctor" },
+    // { name: "Symptom Checker", link: "/user/SymptomChecker" },
     { name: "Consult a Specialist", link: "/user/consultSpecialist" },
     { name: "Patient Portal", link: "/user/patientPortal" },
     { name: "Testimonials", link: "/user/testimonials" },
