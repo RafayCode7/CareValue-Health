@@ -43,7 +43,7 @@ export const Hero = () => {
 
         {/* Subtitle */}
         <p className="mt-4 text-lg md:text-xl text-[#E5E5E5] max-w-md leading-relaxed">
-        Get expert health advice, consult specialists, and access second opinions quickly, privately, anytime
+        At CareValue Health, we believe healthcare should revolve around you, accessible, personal, and seamless. Welcome to your private health companion that's always by your side.
         </p>
 
         {/* Buttons */}
