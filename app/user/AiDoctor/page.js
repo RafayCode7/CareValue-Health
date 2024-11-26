@@ -149,10 +149,10 @@ export default function CareValueHealth() {
           Healthcare on Your Terms
         </h2>
         <p className="text-lg text-gray-700 font-medium mb-6">
-          No Waiting Rooms. No Hassles. Just Quality Care.
+          <i>No Waiting Rooms. No Hassles. Just Quality Care.</i>
         </p>
         <p className="text-lg text-gray-700 font-medium mb-6">
-          Tell us a bit about yourself to get started:
+         <i> Tell us a bit about yourself to get started:</i>
         </p>
 
         {!isFormSubmitted && (
