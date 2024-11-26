@@ -268,36 +268,16 @@ export default function CareValueHealth() {
     </h2>
     <p className="text-lg text-gray-700 leading-relaxed text-center">
       When you're ready, connect with top doctors via video. Personalized care
-      is just a click away—for only{" "}
+      is just a click away for only{" "}
       <span className="font-bold text-gray-800">$29</span>.
     </p>
     <div className="flex justify-center mt-6">
-      <button className="bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700 shadow-lg transform hover:scale-105 transition duration-200">
+      <button className="bg-[#12104A] text-white py-3 px-6 rounded-lg hover:bg-indigo-700 shadow-lg transform hover:scale-105 transition duration-200">
         Book a Video Consultation
       </button>
     </div>
   </div>
 
-  {/* Location Section */}
-  <div className="bg-white p-8 rounded-lg shadow-lg max-w-screen-md w-full">
-    <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
-      We're Here for You 24/7
-    </h2>
-    <p className="text-lg text-gray-700 leading-relaxed text-center mb-6">
-      Find the Closest CareValue Health Location Near You.
-    </p>
-    <p className="text-lg text-gray-700 leading-relaxed text-center">
-      Use Google Maps to locate our nearest facility and get directions:
-    </p>
-    <div className="flex justify-center mt-6">
-      <a
-        href="#"
-        className="text-indigo-600 hover:underline text-lg font-bold mt-4 block"
-      >
-        Find a CareValue Health Location Near You
-      </a>
-    </div>
-  </div>
 </div>
 
     </div>
