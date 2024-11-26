@@ -206,7 +206,7 @@ export default function CareValueHealth() {
 
             <button
               onClick={handleGetStarted}
-              className="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 w-full shadow-lg transform hover:scale-105 transition duration-200 mb-4"
+              className="bg-[#12104A] text-white py-2 px-4 rounded-lg hover:bg-indigo-700 w-full shadow-lg transform hover:scale-105 transition duration-200 mb-4"
             >
               Get Started for Free
             </button>
@@ -252,7 +252,7 @@ export default function CareValueHealth() {
             />
             <button
               onClick={handleSendMessage}
-              className="ml-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-200"
+              className="ml-2 px-4 py-2 bg-[#12104A] text-white rounded-lg shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-200"
             >
               Send
             </button>
