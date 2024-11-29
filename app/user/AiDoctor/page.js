@@ -97,20 +97,8 @@ export default function CareValueHealth() {
             <span className="font-bold text-gray-800">4,152,750</span> people to
             take control of their health. Now it's your turn.
           </p>
-        </div>
-
-        {/* Content Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between max-w-screen-lg w-full">
-          {/* Left: Benefits List */}
-          <ul className="text-sm lg:text-lg text-gray-700 font-medium mb-8 lg:mb-0 lg:mr-8 space-y-4 lg:w-1/2 text-left">
-            <li>● Get Expert Health Advice Instantly</li>
-            <li>● Consult Specialists at Your Convenience</li>
-            <li>● Access Second Opinions Quickly and Privately</li>
-            <li>● Use Our Symptom Checker Anytime, Anywhere</li>
-          </ul>
-
           {/* Right: User Images */}
-          <div className="grid grid-cols-5 gap-2 lg:w-1/2">
+          <div className="grid grid-cols-5 gap-2 lg:w-1/2 mx-auto">
             {["44", "46", "47", "48", "49"].map((id) => (
               <img
                 key={id}
@@ -121,130 +109,138 @@ export default function CareValueHealth() {
             ))}
           </div>
         </div>
-      </div>
 
-      <hr className="w-3/4 border-gray-300 mb-8" />
+        {/* Chat Section */}
+        <div className="bg-white p-4 lg:p-6 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-1/2 flex flex-col my-12">
+          <h2 className="text-xl lg:text-2xl font-bold mb-4 text-gray-800">
+            Healthcare on Your Terms
+          </h2>
+          <p className="text-sm lg:text-lg text-gray-700 font-medium mb-6">
+            <i>No Waiting Rooms. No Hassles. Just Quality Care.</i>
+          </p>
+          <p className="text-sm lg:text-lg text-gray-700 font-medium mb-6">
+            <i>Tell us a bit about yourself to get started:</i>
+          </p>
 
-      {/* Chat Section */}
-      <div className="bg-white p-4 lg:p-6 rounded-lg shadow-lg w-11/12 sm:w-3/4 md:w-1/2 flex flex-col mb-12">
-        <h2 className="text-xl lg:text-2xl font-bold mb-4 text-gray-800">
-          Healthcare on Your Terms
-        </h2>
-        <p className="text-sm lg:text-lg text-gray-700 font-medium mb-6">
-          <i>No Waiting Rooms. No Hassles. Just Quality Care.</i>
-        </p>
-        <p className="text-sm lg:text-lg text-gray-700 font-medium mb-6">
-          <i>Tell us a bit about yourself to get started:</i>
-        </p>
-
-        {!isFormSubmitted && (
-          <>
-            <label
-              htmlFor="age"
-              className="block text-sm lg:text-base text-left mb-2 font-semibold"
-            >
-              Age (18+):
-            </label>
-            <input
-              type="number"
-              id="age"
-              value={age}
-              onChange={(e) => {
-                setAge(e.target.value);
-                setError(""); // Clear error on change
-              }}
-              className="w-full border rounded-md p-2 mb-4 text-black"
-              placeholder="Enter your age"
-            />
-
-            <label className="block text-sm lg:text-base text-left mb-2 font-semibold">
-              Gender:
-            </label>
-            <div className="flex justify-center gap-4 mb-4">
-              <label className="text-black flex items-center">
-                <input
-                  type="radio"
-                  name="gender"
-                  value="Female"
-                  onChange={(e) => {
-                    setGender(e.target.value);
-                    setError(""); // Clear error on change
-                  }}
-                  className="mr-2"
-                />
-                Female
-              </label>
-              <label className="text-black flex items-center">
-                <input
-                  type="radio"
-                  name="gender"
-                  value="Male"
-                  onChange={(e) => {
-                    setGender(e.target.value);
-                    setError(""); // Clear error on change
-                  }}
-                  className="mr-2"
-                />
-                Male
-              </label>
-            </div>
-
-            {error && <p className="text-red-500 text-xs lg:text-sm mb-4">{error}</p>}
-
-            <button
-              onClick={handleGetStarted}
-              className="bg-[#12104A] text-white py-2 px-4 rounded-lg hover:bg-indigo-700 w-full shadow-lg transform hover:scale-105 transition duration-200 mb-4 text-sm lg:text-base"
-            >
-              Get Started for Free
-            </button>
-            <p className="text-xs lg:text-sm text-gray-600">
-              No payment required—start your free consultation now!
-            </p>
-          </>
-        )}
-
-        {isFormSubmitted && (
-          <div className="overflow-y-auto max-h-96 space-y-2">
-            {chatMessages.map((message, index) => (
-              <div
-                key={index}
-                className={`flex ${
-                  message.type === "bot" ? "justify-start" : "justify-end"
-                }`}
+          {!isFormSubmitted && (
+            <>
+              <label
+                htmlFor="age"
+                className="block text-sm lg:text-base text-left mb-2 font-semibold"
               >
+                Age (18+):
+              </label>
+              <input
+                type="number"
+                id="age"
+                value={age}
+                onChange={(e) => {
+                  setAge(e.target.value);
+                  setError(""); // Clear error on change
+                }}
+                className="w-full border rounded-md p-2 mb-4 text-black"
+                placeholder="Enter your age"
+              />
+
+              <label className="block text-sm lg:text-base text-left mb-2 font-semibold">
+                Gender:
+              </label>
+              <div className="flex justify-center gap-4 mb-4">
+                <label className="text-black flex items-center">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                    onChange={(e) => {
+                      setGender(e.target.value);
+                      setError(""); // Clear error on change
+                    }}
+                    className="mr-2"
+                  />
+                  Female
+                </label>
+                <label className="text-black flex items-center">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                    onChange={(e) => {
+                      setGender(e.target.value);
+                      setError(""); // Clear error on change
+                    }}
+                    className="mr-2"
+                  />
+                  Male
+                </label>
+              </div>
+
+              {error && (
+                <p className="text-red-500 text-xs lg:text-sm mb-4">{error}</p>
+              )}
+
+              <button
+                onClick={handleGetStarted}
+                className="bg-[#12104A] text-white py-2 px-4 rounded-lg hover:bg-indigo-700 w-full shadow-lg transform hover:scale-105 transition duration-200 mb-4 text-sm lg:text-base"
+              >
+                Get Started for Free
+              </button>
+              <p className="text-xs lg:text-sm text-gray-600">
+                No payment required—start your free consultation now!
+              </p>
+            </>
+          )}
+
+          {isFormSubmitted && (
+            <div className="overflow-y-auto max-h-96 space-y-2">
+              {chatMessages.map((message, index) => (
                 <div
-                  className={`max-w-xs px-4 py-2 rounded-lg shadow-md text-sm lg:text-base ${
-                    message.type === "bot"
-                      ? "bg-gray-200 text-black"
-                      : "bg-indigo-500 text-white"
+                  key={index}
+                  className={`flex ${
+                    message.type === "bot" ? "justify-start" : "justify-end"
                   }`}
                 >
-                  {message.text}
+                  <div
+                    className={`max-w-xs px-4 py-2 rounded-lg shadow-md text-sm lg:text-base ${
+                      message.type === "bot"
+                        ? "bg-gray-200 text-black"
+                        : "bg-indigo-500 text-white"
+                    }`}
+                  >
+                    {message.text}
+                  </div>
                 </div>
-              </div>
-            ))}
-            <div ref={chatEndRef}></div>
-          </div>
-        )}
+              ))}
+              <div ref={chatEndRef}></div>
+            </div>
+          )}
 
-        {isFormSubmitted && (
-          <div className="flex items-center mt-4">
-            <input
-              type="text"
-              placeholder="Type your message..."
-              value={userInput}
-              onChange={(e) => setUserInput(e.target.value)}
-              onKeyPress={handleInputKeyPress}
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black text-sm lg:text-base focus:ring-indigo-500"
-            />
-            <button
-              onClick={handleSendMessage}
-              className="ml-2 px-4 py-2 bg-[#12104A] text-white rounded-lg shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-200 text-sm lg:text-base"
-            >
-              Send
-            </button>
-          </div>
-        )}
+          {isFormSubmitted && (
+            <div className="flex items-center mt-4">
+              <input
+                type="text"
+                placeholder="Type your message..."
+                value={userInput}
+                onChange={(e) => setUserInput(e.target.value)}
+                onKeyPress={handleInputKeyPress}
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 text-black text-sm lg:text-base focus:ring-indigo-500"
+              />
+              <button
+                onClick={handleSendMessage}
+                className="ml-2 px-4 py-2 bg-[#12104A] text-white rounded-lg shadow-md hover:bg-indigo-700 transform hover:scale-105 transition duration-200 text-sm lg:text-base"
+              >
+                Send
+              </button>
+            </div>
+          )}
+        </div>
+
+        {/* Benefits List */}
+        <ul className="text-sm lg:text-lg text-gray-700 font-medium mb-8 lg:mb-0 lg:mr-8 space-y-4 lg:w-1/2 text-left">
+          <li>● Get Expert Health Advice Instantly</li>
+          <li>● Consult Specialists at Your Convenience</li>
+          <li>● Access Second Opinions Quickly and Privately</li>
+          <li>● Use Our Symptom Checker Anytime, Anywhere</li>
+        </ul>
       </div>
     </div>
   );
